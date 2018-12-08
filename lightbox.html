@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="public/css/chartist.min.css"> -->
+    <link href="public/css/nouislider.min.css" rel="stylesheet">
+    <title>Light Monitoring</title>
+    <link rel='stylesheet' href='public/stylesheets/style.css' />
+  </head>
+  <body>
+  <main role="main" class="container">
+    <div class="mt-1">
+      <br>
+      <h1>Light Box Control</h1>
+    </div>
+    <p class="lead">Control Demo - <span class="statusX">Disconnected</span> </p>
+    <div class="row justify-content-md-center ">
+
+      <div class="col col-md-12 col-md-auto ">
+        <br>
+        <div class="card  card-well">
+          <div class="card-body">
+<div id="gtotal" style=" height:460px" class="gauge"></div>
+            <div style=" margin-left: 10px;margin-right: 10px;" id="sliderRegular" data-value="0" class="slider slider-default "></div>
+          </div>
+        </div>
+<div class="btn-group">
+  <button data-action="sw1-on" type="button" class="btn btn-primary">LED On</button>
+  <button data-action="sw1-off" type="button" class="btn btn-primary">LED Off</button>
+  <button data-action="sw2-on" type="button" class="btn btn-primary">Bulb On</button>
+  <button data-action="sw2-off" type="button" class="btn btn-primary">Bulb Off</button>
+</div>
+
+      </div>
+  
+    </div>
+  
+  
+  </main>
+  
+  
+  
+  
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Smart Light Monitoring </span>
+    </div>
+  </footer>
+  </body>
+<!-- #r Dial js -->
+  <script src="public/dial/raphael-2.1.4.min.js"></script>
+  <script src="public/dial/justgage.js"></script>
+<!-- #endregion -->
+
+  <!-- #core scripts  -->
+  <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="public/bower_components/moment/moment.js"></script>
+  <script src="public/bower_components/underscore/underscore.js"></script>
+  <!-- <script src="public/js/chartist.min.js"></script> -->
+  <script src="public/js/nouislider.min.js"></script>
+  <script src="pingzee.min.js"></script>
+  <!-- #end  -->
+
+<!-- #region  Automation-->
+
+<script src="public/js/light.js"></script>
+
+<!-- #endregion -->
+
+
+</html>
